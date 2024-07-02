@@ -1,0 +1,53 @@
+.nav {
+  background-color: #5113a2;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 2rem;
+  height: 90px;
+  position: fixed; /* Fix the menu at the top of the viewport */
+  top: 0; /* Position it at the top */
+  width: 100%; /* Make it full width */
+  z-index: 2; /* Ensure the menu is above other content */
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+  position: relative;
+}
+
+.nav a.active::before {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #feb868;
+}
+
+.nav a:hover {
+  color: #feb868;
+}
+
