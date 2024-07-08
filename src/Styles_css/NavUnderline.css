@@ -1,0 +1,18 @@
+/* NavUnderline.css */
+.nav-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #0074d9; /* Set the color of the underline */
+  height: 2px; /* Set the height of the underline */
+  transition: all 0.3s; /* Add a transition for smooth animation */
+}
+
+/* Apply a hover effect (optional) */
+.nav-underline:hover {
+  background-color: #ff4136; /* Change the color on hover */
+}
+
+/* You can also add other CSS styles as needed for your design. */
+
+  
