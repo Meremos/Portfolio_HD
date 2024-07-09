@@ -56,7 +56,7 @@ export default function Homecontent({ blockNumber, scrollY }) {
       }}
     >
       <div className="block-image-container">
-        <img src={`/img/visualcase${blockNumber}.jpg`} alt={`Block ${blockNumber}`} />
+        <img src={`${process.env.PUBLIC_URL}/img/visualcase${blockNumber}.jpg`} alt={`Block ${blockNumber}`} />
       </div>
       <div className="text-and-button">
         <div className="top-right-text">

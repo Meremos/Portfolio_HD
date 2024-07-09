@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export default function Herosection() {
-  const location = useLocation();
-
   return (
     <section className="hero">
       <div className="hero-content">
@@ -20,15 +18,15 @@ export default function Herosection() {
         </div>
         <div className="hero-image-container">
           <div className="hero-image">
-            <img src="/img/visuel_hero_header.png" alt="Image 3D" />
+            <img src={`${process.env.PUBLIC_URL}/img/visuel_hero_header.png`} alt="Hero Header" />
             <div className="gradient-overlay"></div>
           </div>
           <div className="image-container">
             <div className="additional-image">
-              <img src="/img/Ball.png" alt="Additional Image" />
+              <img src={`${process.env.PUBLIC_URL}/img/Ball.png`} alt="Ball" />
             </div>
             <div className="shadow">
-              <img src="/img/Ombre.png" alt="Shadow Image" />
+              <img src={`${process.env.PUBLIC_URL}/img/Ombre.png`} alt="Shadow" />
             </div>
           </div>
         </div>
