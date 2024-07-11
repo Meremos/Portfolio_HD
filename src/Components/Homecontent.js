@@ -1,6 +1,8 @@
+// Homecontent.js
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useTransform, motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import '../Styles_css/HomeContent.css';
 
 export default function Homecontent({ blockNumber, scrollY }) {
@@ -16,33 +18,37 @@ export default function Homecontent({ blockNumber, scrollY }) {
     [0.03, 1]
   );
 
-  // Define dynamic content based on the block number
-  let topRightText, largeText, subTitle;
+  let topRightText, largeText, subTitle, linkTo;
   switch (blockNumber) {
     case 1:
       topRightText = 'Digital Strom';
       largeText = '.01';
       subTitle = 'Thematic Analysis';
+      linkTo = '/digital_strom';
       break;
     case 2:
       topRightText = 'eSmart';
       largeText = '.02';
       subTitle = 'Make the energie tangible';
+      linkTo = '/esmart';
       break;
     case 3:
       topRightText = 'Pet Health Data';
       largeText = '.03';
       subTitle = 'Design Thinking methodologie';
+      linkTo = '/pet_health_data';
       break;
     case 4:
       topRightText = 'Meine Impfungen';
       largeText = '.04';
       subTitle = 'Costumer journey Map';
+      linkTo = '/meine_impfungen';
       break;
     default:
       topRightText = '';
       largeText = '';
       subTitle = '';
+      linkTo = '/';
   }
 
   return (
@@ -68,7 +74,7 @@ export default function Homecontent({ blockNumber, scrollY }) {
             <p className="large-text">{largeText}</p>
           </div>
           <div className="button-container">
-            <button className="read-more-button">Read More</button>
+            <Link to={linkTo} className="read-more-button">Read More</Link>
           </div>
         </div>
       </div>
