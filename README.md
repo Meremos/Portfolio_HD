@@ -8,10 +8,11 @@ Using the npm module gh-pages.
 Directly from the develop branch, the gh-pages branch is automatically updated on github.
 
 - Change your code
-- `git commit -am 'message...'`
-- `git push`
-- `npm run build`
-- `npm run deploy`
+git status 
+git commit -am 'message...'
+git push
+npm run build
+npm run deploy
 
 Wait a few minutes and test.
 
