@@ -5,8 +5,8 @@ import App from './App';
 
 const root = createRoot(document.getElementById('root'));
 root.render(
-  // <BrowserRouter basename="/Portfolio_HD">
-  <BrowserRouter basename="/">
+  <BrowserRouter basename="/Portfolio_HD">
+  {/* <BrowserRouter basename="/"> */}
     <App />
   </BrowserRouter>
 );
