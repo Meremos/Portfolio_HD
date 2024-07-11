@@ -6,7 +6,6 @@ console.log('NavUnderline component is rendering.');
 export default function NavUnderline({ onLinkClick = () => {} }) {
   const [underlineStyle, setUnderlineStyle] = useState({});
 
-
   // Function to handle link click events
   const handleLinkClick = (event, path) => {
     console.log('handleLinkClick called with path:', path);
@@ -29,5 +28,6 @@ export default function NavUnderline({ onLinkClick = () => {} }) {
     <div className="nav-underline" style={underlineStyle}></div>
   );
 }
+
 
 

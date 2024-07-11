@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar';
 
 import Home from './pages/home';
 import AboutMe from './pages/about_me';
-import DigitalStrom from './pages/digitalStrom'; // Ensure casing matches the file name exactly
+import DigitalStrom from './pages/digitalstrom'; // Ensure casing matches the file name exactly
 import ESmart from './pages/eSmart';
 import PetHealthData from './pages/petHealthData';
 import MeineImpfungen from './pages/meineImpfungen';
