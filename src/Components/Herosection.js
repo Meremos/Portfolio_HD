@@ -9,7 +9,7 @@ export default function Herosection() {
           <div className="welcome-text">
             <h2 className="welcome-text-h2">Welcome to my space</h2>
           </div>
-          <h1>Hey! I'm David Hervé</h1>
+          <h1>Heys! I'm David Hervé</h1>
           <p className="subtext">Senior UX/UI Designer and Product Designer</p>
           <p className="subtext">crafting digital User Experience</p>
           <Link to="/about_me" className="btn-about-me">
