@@ -162,7 +162,7 @@ export default function DigitalStrom() {
         Let's delve into a concrete example.
         </div>
         <div className="additional-image-case block">
-        <img src={`${process.env.PUBLIC_URL}/img/comment.png`} alt="Google Play Icon" className="comment" />
+        <img src={`${process.env.PUBLIC_URL}/img/Comment.png`} alt="Google Play Icon" className="comment" />
         </div>
         <img src={`${process.env.PUBLIC_URL}/img/fleche_bas.png`} alt="Google Play Icon" className="column-icon2 block" />
 
