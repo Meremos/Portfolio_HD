@@ -11,6 +11,17 @@
   top: 0; /* Position it at the top */
   width: 100%; /* Make it full width */
   z-index: 2; /* Ensure the menu is above other content */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Add transition for transform and opacity */
+}
+
+.nav.visible {
+  transform: translateY(0); /* No translation */
+  opacity: 1; /* Fully visible */
+}
+
+.nav.hidden {
+  transform: translateY(-100%); /* Move out of view */
+  opacity: 0; /* Fully transparent */
 }
 
 .site-title {
@@ -50,4 +61,3 @@
 .nav a:hover {
   color: #feb868;
 }
-

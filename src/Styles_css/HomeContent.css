@@ -9,7 +9,7 @@
 
 .content-block {
   margin-bottom: 50px;
-  height: 400px; /* You can adjust this height as needed */
+  height: 400px; /* Adjust as needed */
   box-sizing: border-box;
   background-color: #ffffff;
   border-radius: 18px;
@@ -17,11 +17,13 @@
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  max-width: 1080px;
+  max-width: 1080px; /* Ensure all blocks have the same max-width */
+  width: 100%; /* Set width to 100% for consistency */
+  position: relative; /* Required for the coming soon overlay */
 }
 
 .block-image-container {
-  width: 50%; /* Adjusted to 50% to make the image take half the width */
+  width: 50%; /* Half width for the image */
   height: 100%;
   position: relative;
 }
@@ -38,14 +40,13 @@
   object-position: 80% 50%;
 }
 
-
 .top-right-text {
-    display: flex;
-    text-align: right;
-    color: #5113a2;
-    flex-direction: column;
-    height: 90%;
-    margin-top: 20px;
+  display: flex;
+  text-align: right;
+  color: #5113a2;
+  flex-direction: column;
+  height: 90%;
+  margin-top: 20px;
 }
 
 .top-right-text p {
@@ -59,13 +60,11 @@
   display: flex;
   flex-direction: column;
   align-items: end;
-  width: 50%; /* Adjusted to 50% to make the text-and-button take half the width */
+  width: 50%; /* Half width for the text and button */
   padding-right: 50px;
   position: relative;
   height: 107%;
 }
-
-/* Updated HomeContent.css */
 
 .bottom-left-content {
   display: flex;
@@ -104,6 +103,7 @@ p.large-text {
 }
 
 .read-more-button {
+  text-decoration: none;
   background-color: #F79D36;
   transition: background-color 0.3s ease;
   color: #ffffff;
@@ -119,7 +119,6 @@ p.large-text {
   background-color: #FFC47F; /* Change the background color on hover */
 }
 
-
 p.sub-title {
   font-size: 22px;
   color: #666;
@@ -127,3 +126,28 @@ p.sub-title {
   color: #5113a2;
   margin-top: 12px;
 }
+
+/* Additional styles for Coming Soon overlay */
+.coming-soon-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  z-index: 2; /* Ensure it sits above all other content */
+  border-radius: 18px;
+  pointer-events: none; /* Allow clicks to pass through the overlay */
+}
+
+
+.block-image-container img.hovered {
+  object-position: 80% 50%;
+  transition: object-position 0.5s ease;
+}
+

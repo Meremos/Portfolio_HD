@@ -1,20 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-export default function Herosection() {
+export default function Herosection({ scrollToRef }) { // Accept the ref as a prop
+  const handleScrollToPortfolio = () => {
+    if (scrollToRef && scrollToRef.current) {
+      scrollToRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="hero">
       <div className="hero-content">
         <div className="hero-text">
           <div className="welcome-text">
-            <h2 className="welcome-text-h2">Welcome to my space</h2>
+            <h2 className="welcome-text-h2">Welcome to my UX space</h2>
           </div>
-          <h1>Heys! I'm David Hervé</h1>
-          <p className="subtext">Senior UX/UI Designer and Product Designer</p>
-          <p className="subtext">crafting digital User Experience</p>
-          <Link to="/about_me" className="btn-about-me">
-            About me
-          </Link>
+          <h1>Hey! I'm David Hervé,</h1>
+          <p className="subtext">Senior UX/UI Designer and Product Designer,</p>
+          <p className="subtext">crafting digital User Experience.</p>
+          <button onClick={handleScrollToPortfolio} className="btn-about-me">
+            See My UX Portfolio
+          </button>
         </div>
         <div className="hero-image-container">
           <div className="hero-image">

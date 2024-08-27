@@ -1,3 +1,11 @@
+/* Ensure there is no margin or padding for body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Header styles */
 header {
     width: 100%;
     margin: 0;
@@ -5,49 +13,351 @@ header {
     position: relative;
 }
 
+/* Header image styles */
 .header-image {
     width: 100%;
+    max-height: 400px;
     height: auto;
     display: block;
     margin: 0;
     padding: 0;
+    object-fit: cover;
 }
 
+
+/* Content styles */
 .content {
-    padding: 20px;
+    padding-top: 20px;
     text-align: center;
     flex: 1; /* Ensure content takes available space */
 }
 
-.info-box {
+/* Info box styles */
+.info-box-ds {
     width: 1000px;
-    margin: -200px auto 20px; /* Negative top margin to create overlap */
-    padding: 20px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -200px;
+    margin-bottom: 40px;
+    padding-top: 13px;
+    padding-bottom: 35px;
+    padding-left: 45px;
+    padding-right: 45px;
     background-color: white;
     border-radius: 18px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    position: relative; /* Ensure positioning context for z-index */
-    z-index: 1; /* Ensure it appears above the header */
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    
 }
 
-.info-title {
-    font-weight: bold;
+/* Title box info styles */
+.titleboxinfo-ds {
+    font-weight: 600;
     margin-bottom: 10px;
+    font-size: 2.5em;
 }
 
-.textBoxInfo {
+/* Text box info styles */
+.textBoxInfo-ds {
     font-size: 1.2em;
 }
 
+/* Main content styles */
 .main-content {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensure the main content takes full viewport height */
 }
 
+/* Footer styles */
 footer {
     background-color: #f1f1f1;
     padding: 10px 0;
     text-align: center;
     margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Role analysis box styles */
+.role-analysis-box {
+    background-color: #242F40;
+    color: white;
+    width: 100%;
+    padding: 50px 0;
+    box-sizing: border-box;
+    margin: 0; /* Remove any margin */
+    display: flex;
+    justify-content: center;
+}
+
+/* Role content styles */
+.role-content {
+    width: 950px;
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+/* Role title styles */
+.role-title {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.bold-text{
+    font-weight: 600;  
+}
+
+.semi-bold-text{
+    font-weight: 400;
+}
+
+/* Role description styles */
+.role-description {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+/* Role columns container styles */
+.role-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Individual role column styles */
+.role-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+/* Role column title styles */
+.role-column-title {
+    font-weight: 500 !important;
+    margin-bottom: 10px;
+    text-align: left;
+    position: relative;
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+.role-column-title::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em; /* Adjust size if necessary */
+    color: white; /* Ensure the color matches the text */
+}
+
+/* Role column text styles */
+.role-column-text {
+    font-size: 1em;
+    text-align: left;
+}
+
+/* Quotation box styles */
+.quotation-box {
+    background-color: white;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    width: 1000px;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+/* Quotation component styles */
+.quotation {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.quotation-mark-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quotation-mark {
+    width: 2em; /* Adjust size if necessary */
+    height: auto;
+}
+
+.quotation-text {
+    flex: 1;
+    margin: 0 20px;
+    margin-bottom: 10px;
+    font-size: 2em;
+    position: relative;
+}
+
+.quotation-line {
+    border: 0;
+    border-top: 1px solid #d3d3d3;
+    margin: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.top-container {
+    justify-content: flex-start;
+}
+
+.bottom-container {
+    justify-content: flex-end;
+}
+
+/* Additional text box styles */
+.additional-text-box {
+    background-color: white;
+    width: 1000px;
+    /* padding: 20px; */
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 1.2em;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.additional-text-box2 {
+    background-color: white;
+    width: 1000px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 1.2em;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.additional-image-case {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 0;
+}
+
+.theme_anal{
+    width: 1000px;
+    margin-top: 20px;
+}
+
+/* Styles pour la section à deux colonnes */
+.two-column-section {
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: 40px auto; /* Espace supérieur pour bien séparer cette section */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.column {
+    width: 48%; /* Chaque colonne prend 48% de la largeur pour l'espacement */
+    text-align: center; /* Centrer le contenu dans chaque colonne */
+}
+
+.column-icon {
+    height: 50px; /* Assure la taille uniforme des icônes */
+    margin-bottom: 20px; /* Espace entre l'icône et le texte */
+}
+
+.column-icon2 {
+    margin-bottom: -5px;
+    margin-top: 30px;
+}
+
+.column-title {
+    background-color: #73A836; /* Fond vert */
+    color: white; /* Texte en blanc */
+    padding: 10px 0;
+    margin-bottom: 20px; /* Espace entre le titre et le texte */
+    font-size: 1.5em; /* Taille du texte */
+    border-radius: 5px; /* Optionnel : pour arrondir les coins du fond */
+    text-align: center;
+}
+
+.column p {
+    font-size: 1.2em; /* Taille de police pour le texte des colonnes */
+    text-align: left; /* Aligner le texte à gauche dans chaque colonne */
+}
+
+.comment {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically as well */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 80% !important; /* Ensure the container takes the full width */
+}
+
+.white-space {
+    background-color: white;
+  height: 50px; /* Ajuste la hauteur selon tes besoins */
+  width: 100%; /* Assure que la div prend toute la largeur */
+}
+
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale:0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.block {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+
+@keyframes appearleft {
+    from{
+        opacity: 0;
+        transform: translateX(300px); /* Start 100px to the left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* End at the original position */
+    }
+}
+
+.block2 {
+    animation: appearleft linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }

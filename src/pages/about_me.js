@@ -1,34 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Footer from '../Components/Footer'; // Import the Footer component
-
-
+import Herosection_about from '../Components/Herosection_about'; // Import the Herosection_about component
+import '../Styles_css/aboutme.css';
 
 export default function AboutMe() {
   return (
-    <section>
-      <NavLink to="/home" className="active">
-        Home
-      </NavLink>
-      <NavLink to="/portfolio" className="active">
-        Portfolio
-      </NavLink>
-      <NavLink to="/about_me" className="active">
-        About me
-      </NavLink>
-      <NavLink to="/contact" className="active">
-        Contact
-      </NavLink>
+    <div>
+      {/* Hero section for the About Me page */}
+      <Herosection_about />
+
+  
 
       {/* Include the Footer component at the end of the page */}
       <Footer />
-    </section>
+    </div>
   );
 }
-
-
-
-
-
-
-
