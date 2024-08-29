@@ -13,7 +13,7 @@ export default function Footer() {
         </div>
       <div className="footer-item">
       <a href="https://www.linkedin.com/in/davidh4/" target="_blank" rel="noopener noreferrer">
-          <img src="/Portfolio_HD/img/icon_linkedin.svg" alt="LinkedIn Icon" />
+          <img src="/Portfolio_HD/img/icon_linkedin.png" alt="LinkedIn Icon" />
           {/* <img src={`${process.env.PUBLIC_URL}/img/icon_linkedin.svg`} alt="LinkedIn Icon" /> */}
         </a>
         </div>
