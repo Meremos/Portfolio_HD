@@ -247,7 +247,7 @@ export default function DigitalStrom() {
 
       </div>
        {/* Add the BackButton component at the bottom */}
-       <BackButton />
+       
 
       <Footer />
 

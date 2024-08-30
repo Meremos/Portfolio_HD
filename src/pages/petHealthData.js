@@ -296,7 +296,7 @@ will entail longer or shorter development times.</p>
       </div>
 
          {/* Add the BackButton component at the bottom */}
-         <BackButton />
+        
       <Footer />
     </div>
   );

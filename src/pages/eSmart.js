@@ -202,7 +202,7 @@ behaviors, preferences, and needs. By leveraging insights from previous marketin
 
 
        {/* Add the BackButton component at the bottom */}
-       <BackButton />
+       
 
       </div>
       <Footer />
